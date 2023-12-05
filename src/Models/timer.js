@@ -1,4 +1,4 @@
-class Timer {
+export default class Timer {
     constructor(intervalTime = 25, audioFile = '') {
       this.intervalTime = intervalTime;
       this.currentTime = intervalTime;
