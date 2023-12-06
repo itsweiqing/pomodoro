@@ -31,15 +31,20 @@ export default class Timer {
       }, 1000);
     }
   
-    fastForward() {
-        // When the user clicks the fast forward button, set finished to true and currentTime to 0
-        this.finished = true;
-        this.currentTime = 0;
-      
-        // stop active timer
-        if (this.timerId) {
-          clearInterval(this.timerId);
-        }
+    fastForward(period) {
+      this.finished = true;
+    
+      // Set currentTime based on the period
+      if (period === 'work') {
+        this.currentTime = 5 * 60 * 1000; // 5 minutes break
+      } else {
+        this.currentTime = 25 * 60 * 1000; // 25 minutes work
+      }
+    
+      // Stop active timer
+      if (this.timerId) {
+        clearInterval(this.timerId);
+      }
     }
   
     extendTime() {
