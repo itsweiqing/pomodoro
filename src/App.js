@@ -1,5 +1,6 @@
 import './App.css';
 
+
 const Button = ({ children, className, onClick }) => {
   return (
     <button className={className} onClick={onClick}>
@@ -14,6 +15,7 @@ function App() {
   };
 
   return (
+    
     <div className="App">
       <header className="App-header">
         <h1>LoveDoro Timer</h1>
