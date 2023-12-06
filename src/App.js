@@ -1,9 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Timer from './Models/timer'
-import Task from './Models/task';
-import TaskList from './Models/taskList';
-import Node from './Models/node';
+
 
 
 function App() {
