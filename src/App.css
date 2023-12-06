@@ -61,34 +61,82 @@ body {
 .App-button:hover {
   opacity: 0.7; /* Change opacity on hover */
 }
+.TaskList-div {
+  display: flex; /* Make the children sit in a column */
+  flex-direction: column; /* Change the direction to column */
+  align-items: flex-end; /* Center the children horizontally */
+  width: 60%; /* Set a width for the div. Adjust this value as needed */
+  margin-bottom: 70px;
+}
 
 ul.Task-list {
   display: flex;
-  margin: 20px auto; /* Center the list horizontally */
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   border: none;
   color: black;
   font-size: 20px; /* Use font-size instead of font */
-  width: 50%; /* Limit the width of the list */
+  width: 60%; /* Limit the width of the list */
   border-radius: 10px; /* Add rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 ul.Task-list li {
   list-style-type: none; /* Remove the list item bullet */
-  margin: 10px;
   padding: 10px; /* Add some padding */
+  margin-top: 10px;
   background-color: rgb(255, 255, 255);
   transition: background-color 0.3s ease;
-  width: 50%; /* Make the list items take up the full width of the list */
+  width: 50%; 
   text-align: center; /* Center the text */
   border-radius: 5px; /* Add rounded corners */
 }
 
 ul.Task-list li:hover {
-  background-color: #c2ebc6;
+  background-color: #e3f7e5;
   cursor: pointer;
 }
+.Task-title {
+  text-align: center; 
+  color: #d8d8d8; 
+  margin-bottom: 20px; 
+}
 
+.Task-input {
+  width: 60%; /* Make the input take up the full width of its container */
+  padding: 10px; /* Add some padding inside the input */
+  margin-bottom: 10px; /* Add some space below the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+}
+.Task-header {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 225px; 
+}
+.Task-header button {
+  padding:0px;
+}
+/*task input field with save button */ 
+.CreateTask-div {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-end; 
+  width: 50%; 
+}
+.CreateTask-div button {
+  padding: 10px 20px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.CreateTask-div button:hover {
+  background-color: #45a049; 
+}
+.CreateTask-div button:hover {
+  background-color: #3f9444; 
+}
